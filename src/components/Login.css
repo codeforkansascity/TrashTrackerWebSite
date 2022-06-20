@@ -1,0 +1,18 @@
+.login-title {
+    margin: 50px;
+}
+
+.login-form {
+    width: 25%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.login-label {
+    margin: 25px;
+}
+
+.login-input {
+    margin: 25px;
+}

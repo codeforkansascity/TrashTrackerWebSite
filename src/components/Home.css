@@ -1,0 +1,24 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-right-header {
+    display: flex;
+}
+
+.right-header-item {
+    margin: 30px;
+}
+
+.home-print-button {
+    height: 35px;
+}
+
+.home-profile {
+    display: flex;
+}
+
+.home-profile-image {
+    margin: 10px;
+}
