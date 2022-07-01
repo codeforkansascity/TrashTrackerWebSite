@@ -1,13 +1,70 @@
 body {
+  /* background-color: #ffe69a; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* NavBar Styling */
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.nav-item {
+  padding: 0 0.5rem 0;
+}
+
+.user {
+  padding-right: 2.5rem;
+}
+
+/* Google Maps Embed */
+
+#map {
+  background: linear-gradient(to right, #ffe8d6, #ffe8d6);
+
+  padding: 7rem;
+}
+
+/* Search  */
+
+#search {
+  padding: 4rem 0 3rem 0;
+  background-color: #f9f6f7;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+/* Table */
+
+#main-table {
+  background-color: #f9f6f7;
+  padding-bottom: 7rem;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #ff971d;
+  padding: 1rem;
+}
+
+.foot-note {
+  color: white;
+  font-weight: 700;
+  text-align: center;
 }

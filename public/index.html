@@ -25,6 +25,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +52,172 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Start NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Trash Tracker</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav position-absolute end-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-secondary">Print Report</button>
+            </li>
+            <li class="nav-item dropdown user">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                UserName
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Update Email</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </li>
+              </ul>
+            </li>
+            
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Google Maps Embed -->
+
+    <section id="map">
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-8">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kansas%20city,%20mo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:700px;}</style><a href="https://www.embedgooglemap.net">google maps embed code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div></div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Search Filter Feature -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                  </div>
+                <div class="col-6">
+                    <label for="formGroupExampleInput" class="form-label">4 Entries in the past</label>
+
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>30 Days</option>
+                        <option value="1">2 Months</option>
+                        <option value="2">3 Months</option>
+                        <option value="3">4 Months</option>
+                        <option value="3">5 Months</option>
+                        <option value="3">6 Months</option>
+
+                      </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Table -->
+
+    
+    <section id="main-table">
+        <div class="container">
+            <div class="row">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Submitted By</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Comments</th>
+                          <th scope="col">Photos</th>
+                          <th scope="col">Edit/Del</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>816-888-1479</td>
+                          <td>6/21/2022</td>
+                          <td>Map</td>
+                          <td>Retrieved</td>
+                          <td>13 gal bag</td>
+                          <td> <a href="#main-table">IMG 1</a></td>
+                          <td> <a href="#main-table">Edit </a>/<a href="#main-table"> Del</a> </td>
+
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>816-445-0985</td>
+                          <td>6/21/2022</td>
+                          <td>Map</td>
+                          <td>Retrieved</td>
+                          <td>Mattress</td>
+                          <td> <a href="#main-table">IMG 1</a></td>
+                          <td> <a href="#main-table">Edit </a>/<a href="#main-table"> Del</a> 
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>816-202-4857</td>
+                          <td>6/21/2022</td>
+                          <td>Map</td>
+                          <td>Pending</td>
+                          <td>Large trash bag</td>
+                          <td> <a href="#main-table">IMG 1</a></td>
+                          <td> <a href="#main-table">Edit </a>/<a href="#main-table"> Del</a> 
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>816-347-2218</td>
+                            <td>6/21/2022</td>
+                            <td>Map</td>
+                            <td>Pending</td>
+                            <td>Couch</td>
+                            <td> <a href="#main-table">IMG 1</a></td>
+                            <td> <a href="#main-table">Edit </a>/<a href="#main-table"> Del</a> 
+                          </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <p class="foot-note">Made in KC</p>
+                </div>
+            </div>
+            
+                </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
